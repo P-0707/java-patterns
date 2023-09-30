@@ -1,0 +1,47 @@
+// Right-angled triangle star pattern
+
+// creating a right-angled triangle with the size specified
+
+public class SecondStarProgram {
+    public static void main(String args[]) {
+        int row,column;
+        for(row = 1; row <= 5; row++) {
+            for(column = 1 ; column <= row; column++ ) {
+                System.out.print("*   ");
+            } 
+            System.out.println();
+        }
+    }
+}
+
+
+// Asking the user to give the size
+
+import java.util.Scanner;
+
+public class SecondStarProgram {
+    public static void main(String args[]) {
+        int row,column;
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Give the number of rows you want the right angled triangled to be:  ");
+        int n = sc.nextInt();
+        
+        
+        for(row = 1; row <= n; row++) {
+            for(column = 1 ; column <= row; column++ ) {
+                System.out.print("*   ");
+            } 
+            System.out.println();
+        }
+    }
+}
+
+
+// output for the first and second code(if user input is 5) 
+
+*   
+*   *   
+*   *   *   
+*   *   *   *   
+*   *   *   *   * 
