@@ -1,0 +1,49 @@
+//5x5 grid star pattern with space between the each star
+
+/*
+directly giving the number as 5 and printing the star pattern
+Version 1: Directly specified size
+*/
+public class FirstStarProgram {
+    public static void main(String args[]) {
+        int row, column;
+        for(row = 1 ; row <= 5 ; row++) {
+            for (column = 1 ; column <= 5 ; column++) {
+                System.out.print("*   ");
+            } System.out.println();
+        }
+    } 
+}
+
+
+/*
+asking the user to give me the number 5(you can also give any number you wanted it to be) and printing the star program
+Version 2: User input for size
+*/
+import java.util.Scanner;
+
+public class FirstStarProgram {
+    public static void main(String args[]) {
+        int row, column;
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the no of grids you wanted the star pattern to be (its nxn pattern): ");
+        int n = sc.nextInt();
+        
+        
+        for(row = 1 ; row <= n ; row++) {
+            for (column = 1 ; column <= n ; column++) {
+                System.out.print("*   ");
+            } System.out.println();
+        }
+    } 
+}
+
+
+// for the first and second code(if input value is 5) the output will be 
+
+*   *   *   *   *   
+*   *   *   *   *   
+*   *   *   *   *   
+*   *   *   *   *   
+*   *   *   *   *   
