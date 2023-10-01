@@ -1,0 +1,49 @@
+// This fourth program is of Hollow Square:
+
+// When the size is fixeed 
+public class FourthStarProgram {
+    public static void main(String args[]) {
+        int row, column;
+        int n = 5;
+        
+        for(row = 1; row <= n; row++) {
+            for(column = 1; column<= n; column++) {
+                if(row == 1 || column == 1 || row == n || column == n) {
+                    System.out.print("*   ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+// when we asks the user for the size
+import java.util.Scanner;
+
+public class FourthStarProgram {
+    public static void main(String args[]) {
+        int row, column;
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the no.of rows you want the Hollow square to be:  ");
+        int n = sc.nextInt();
+        
+        for(row = 1; row <= n; row++) {
+            for(column = 1; column<= n; column++) {
+                if(row == 1 || column == 1 || row == n || column == n) {
+                    System.out.print("*   ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+// output for two versions when the input is 5 for the second version
+*   *   *   *   *   
+*               *   
+*               *   
+*               *   
+*   *   *   *   *   
