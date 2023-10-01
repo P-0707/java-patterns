@@ -1,0 +1,44 @@
+// Inverted Right-angled Triangle
+
+// Fixed size of the triangle 
+public class ThirdStarProgram {
+    public static void main(String args[]) {
+        int row, column;
+        
+        for(row = 5; row >= 1; row--) {
+            for(column = 1; column <= row; column++){
+                System.out.print("*   ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+// Asking the size(ie., no of rows for the triangle) from the user 
+import java.util.Scanner;
+
+public class ThirdStarProgram {
+    public static void main(String args[]) {
+        int row, column;
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the no.of rows you want the inverted right angled triangle to be:  ");
+        int n = sc.nextInt();
+        
+        for(row = n; row >= 1; row--) {
+            for(column = 1; column <= row; column++){
+                System.out.print("*   ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+// Output for the first and second code(if user input is 5) 
+*   *   *   *   *   
+*   *   *   *   
+*   *   *   
+*   *   
+*   
